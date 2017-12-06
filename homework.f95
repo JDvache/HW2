@@ -10,7 +10,7 @@ real(8), dimension(:,:), intent(out) :: a
 integer(4), intent(out) :: x1, y1, x2, y2
 integer(4) :: mpiErr, mpiRank
 
-call mpi_init(mpiErr)
+
 
 call mpi_comm_rank(MPI_COMM_WORLD, mpiRank, mpiErr)
 
@@ -22,7 +22,7 @@ else
     call helper(a, x1, y1, x2, y2)
 endif
     
-call mpi_finalize(mpiErr)
+
 
 end subroutine
 
