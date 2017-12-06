@@ -48,6 +48,7 @@ activeHelpers = mpiSize - 1
 
 ! main loop
 
+
 maxSum = a(1,1)
 x1 = 1
 y1 = 1
